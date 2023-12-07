@@ -1,341 +1,701 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    color: #000000;
-    transition: all .5s;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.5s;
 }
-img{
-    max-width: 100%;
-    height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
-main{
-    background:black;
+main {
+  background: black;
 }
 /*--------------header--------------*/
-header{
-    padding: 1.2em 10%;
-    background:black;
+header {
+  padding: 1.2em 10%;
+  background: black;
 }
-header > div{
-    font-size: 0;
+header > div {
+  font-size: 0;
 }
-header h1{
-    width: 20%;
-    height: 145px;
-    display: inline-block;
-    vertical-align: bottom;
+header h1 {
+  width: 20%;
+  height: 145px;
+  display: inline-block;
+  vertical-align: bottom;
 }
-header h1 a{
-    width: 200px;
-    height: 200px;
-    display: inline-block;
+header h1 a {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
 
-    overflow: hidden;
-    cursor: pointer;
+  overflow: hidden;
+  cursor: pointer;
 }
-nav{
-    display: inline-block;
-    font-size: 0;
-    vertical-align: bottom;
-    width: 80%;
-    text-align: right;
+nav {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: bottom;
+  width: 80%;
+  text-align: right;
 }
-nav ul li{
-    display: inline-block;
-    min-width: 150px;
+nav ul li {
+  display: inline-block;
+  min-width: 150px;
 }
-nav ul li a{
-    font-size: 1rem;
-    color:black;
-    background-color:white;
-    margin: 0 5px;
-    display: block;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    border: 2px solid #ffffff;
-    text-transform: uppercase;
-    border-radius: 1.5rem;
+nav ul li a {
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  margin: 0 5px;
+  display: block;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
 }
 
 /*--------------/header--------------*/
 
 /*--------------banner--------------*/
-#banner::before{
-    content: "";
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 100%;
-    height: 100%;
-    position: absolute;
+#banner::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
-#banner{
-    position: relative;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 50vh;
-    background: url(../imagenes/Lost.jpg) fixed no-repeat center 20%;
-    background-size: cover;
+#banner {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 50vh;
+  background: url(../imagenes/Lost.jpg) fixed no-repeat center 20%;
+  background-size: cover;
 }
-#banner > h2{
-    color: #ffffff;
-    font-size: 2.3em;
-    text-shadow: 2px 3px 5px rgb(0, 0, 0);
-    background-color:rgba(255, 255, 255, 0.6);
-    border-radius: 1em;
-    text-align: center;
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    padding: 1em 1.1em;
+#banner > h2 {
+  color: #ffffff;
+  font-size: 2.3em;
+  text-shadow: 2px 3px 5px rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1em;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  padding: 1em 1.1em;
 }
 /*--------------/banner--------------*/
-section{
-    margin: 1em 2em;
-    padding: 2em 4em;
-    background: rgb(255, 255, 255);
+section {
+  margin: 1em 2em;
+  padding: 2em 4em;
+  background: rgb(255, 255, 255);
 }
-section:not(#banner){
-    border-radius: 2em;
+section:not(#banner) {
+  border-radius: 2em;
 }
 
 /*--------------inicio--------------*/
-#inicio h3{
-    font-size: 1.5em;
-    color:rgb(146, 11, 79);
-    border-bottom: 1px solid rgb(0, 0, 0);
-    padding-bottom: .1em;
-    padding-left: 0.2em;
-    margin-top: 1em;
-    width: 75%;
+#inicio h3 {
+  font-size: 1.5em;
+  color: rgb(146, 11, 79);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 0.1em;
+  padding-left: 0.2em;
+  margin-top: 1em;
+  width: 75%;
 }
-#inicio > div{
-    margin: 1.5rem 1rem 3rem 1rem;
+#inicio > div {
+  margin: 1.5rem 1rem 3rem 1rem;
 }
-#inicio p{
-    line-height: 1.5;
-    margin-bottom: 1.2em;
-   
+#inicio p {
+  line-height: 1.5;
+  margin-bottom: 1.2em;
 }
 
 /*--------------/inicio--------------*/
 
 /*--------------Personajes--------------*/
-#personajes > h2{
-    font-size: 1.9em;
-    color:rgb(146, 11, 79);
-    border-bottom: 1px solid rgb(0, 0, 0);
-    padding-bottom: .2em;
-    padding-left: 0.3em;
-    margin-top: 1.1em;
-    width: 90%;
+#personajes > h2 {
+  font-size: 1.9em;
+  color: rgb(146, 11, 79);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 0.2em;
+  padding-left: 0.3em;
+  margin-top: 1.1em;
+  width: 90%;
 }
 
-#personajes > p{
-    margin: 1.5rem 1rem 3rem 1rem;
+#personajes > p {
+  margin: 1.5rem 1rem 3rem 1rem;
 }
 
-#personajes > article{
-    font-size: 0;
-    position: relative;
-    height: 500px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    margin: 1%;
-    width: calc(50% - 1% - 16px);
-    display: inline-block;
-    vertical-align: top;
+#personajes > article {
+  font-size: 0;
+  position: relative;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin: 1%;
+  width: calc(50% - 1% - 16px);
+  display: inline-block;
+  vertical-align: top;
 }
-.personaje{
-    font-size: 1rem;
-    width: 45%;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    border-right: 1px dotted rgba(0, 0, 0, 0.3);
-    vertical-align: middle;
+.personaje {
+  font-size: 1rem;
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  border-right: 1px dotted rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
 }
-.personaje figure{
-    max-width: 100%;
+.personaje figure {
+  max-width: 100%;
 }
-.personaje figure img{
-    width: 100%;
-    min-height: auto;
-    transition: all 0.7s;
-    position: relative;
-    z-index: 2;
+.personaje figure img {
+  width: 100%;
+  min-height: auto;
+  transition: all 0.7s;
+  position: relative;
+  z-index: 2;
 }
 
-#personajes > article:hover .personaje figure img{
-    transform: scale(1.1);
+#personajes > article:hover .personaje figure img {
+  transform: scale(1.1);
 }
 
 .personaje-contenido {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 .personaje-titulo {
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-top: 0.3em;
-    margin-bottom: 0.6em;
-    color: #333;
-    transition: all 0.5s;
-    position: relative;
-    z-index: 3;
-    opacity: 0;
-    margin-top: -5%;
-} 
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 0.3em;
+  margin-bottom: 0.6em;
+  color: #333;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  margin-top: -5%;
+}
 
-#personajes > article:hover .personaje .personaje-titulo{
-    color: #ffffff;
-    transform: scale(1.05);
-    background-color: rgb(146, 11, 79);
-    padding: 0.5em 0;
-    margin-top: 0;
-    opacity: 1;
+#personajes > article:hover .personaje .personaje-titulo {
+  color: #ffffff;
+  transform: scale(1.05);
+  background-color: rgb(146, 11, 79);
+  padding: 0.5em 0;
+  margin-top: 0;
+  opacity: 1;
 }
 .personaje-descripcion {
-    font-size: 1em;
-    color: #777;
-    margin-bottom: 0.2em;
-    transition: all 0.5s;
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 0.2em;
+  transition: all 0.5s;
 }
 
-#personajes > article > div:nth-of-type(2){
-    font-size: 1rem;
-    width: 51%;
-    margin: 0 1% 0 3%;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
+#personajes > article > div:nth-of-type(2) {
+  font-size: 1rem;
+  width: 51%;
+  margin: 0 1% 0 3%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
 }
 
 /*--------------Episodios--------------*/
-#episodios > h2{
-    font-size: 1.9em;
-    color:rgb(146, 11, 79);
-    border-bottom: 1px solid rgb(0, 0, 0);
-    padding-bottom: .2em;
-    padding-left: 0.3em;
-    margin-top: 1.1em;
-    width: 90%;
+#episodios > h2 {
+  font-size: 1.9em;
+  color: rgb(146, 11, 79);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 0.2em;
+  padding-left: 0.3em;
+  margin-top: 1.1em;
+  width: 90%;
 }
 
-#episodios > p{
-    margin: 1.5rem 1rem 3rem 1rem;
+#episodios > p {
+  margin: 1.5rem 1rem 3rem 1rem;
 }
 
-#episodios > article{
-    font-size: 0;
-    position: relative;
-    height: auto;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    margin: 1%;
-    width: 90%;
-    display: inline-block;
-    vertical-align: top;
+#episodios > article {
+  font-size: 0;
+  position: relative;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin: 1%;
+  width: 90%;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.episodio{
-    font-size: 1rem;
-    width: 45%;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    border-right: 1px dotted rgba(0, 0, 0, 0.3);
-    vertical-align: middle;
+.episodio {
+  font-size: 1rem;
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  border-right: 1px dotted rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
 }
 
-.episodio figure{
-    max-width: 100%;
+.episodio figure {
+  max-width: 100%;
 }
-.episodio figure img{
-    width: 100%;
-    height: auto;
-    transition: all 0.5s;
-    position: relative;
-    z-index: 2;
+.episodio figure img {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 2;
 }
-#episodios > article:hover .episodio figure img{
-    transform: scale(0.9);
+#episodios > article:hover .episodio figure img {
+  transform: scale(0.9);
 }
 
 .episodio-contenido {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 .episodio-titulo {
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-top: 0.3em;
-    margin-bottom: 0.6em;
-    color: #333;
-    transition: all 0.5s;
-    position: relative;
-    z-index: 3;
-    opacity: 0;
-    margin-top: -5%;
-}  
-#episodios > article:hover .episodio .episodio-titulo{
-    color: #ffffff;
-    background-color: rgb(146, 11, 79);
-    padding: 0.5em 0;
-    margin-top: 0;
-    opacity: 1;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 0.3em;
+  margin-bottom: 0.6em;
+  color: #333;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  margin-top: -5%;
+}
+#episodios > article:hover .episodio .episodio-titulo {
+  color: #ffffff;
+  background-color: rgb(146, 11, 79);
+  padding: 0.5em 0;
+  margin-top: 0;
+  opacity: 1;
 }
 .episodio-descripcion {
-    font-size: 1em;
-    color: #777;
-    margin-bottom: 0.2em;
-    transition: all 0.5s;
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 0.2em;
+  transition: all 0.5s;
 }
 
-#episodios > article > div:nth-of-type(2){
-    font-size: 1rem;
-    width: 50%;
-    margin: 0 1% 0 3%;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
+#episodios > article > div:nth-of-type(2) {
+  font-size: 1rem;
+  width: 50%;
+  margin: 0 1% 0 3%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
 }
 iframe {
-    border: 0;
+  border: 0;
 }
 /*--------------Teorias--------------*/
 
 #teorias {
+  text-align: center;
+}
+#teorias > h2 {
+  font-size: 1.9em;
+  color: rgb(146, 11, 79);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 0.2em;
+  padding-left: 0.3em;
+  margin-top: 1.1em;
+  width: 90%;
+}
+
+#teorias > p {
+  margin: 1.5rem 1rem 3rem 1rem;
+}
+
+#teorias > article {
+  font-size: 0;
+  position: relative;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin: 1%;
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.teoria {
+  font-size: 1rem;
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  border-right: 1px dotted rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+}
+
+.teoria figure {
+  max-width: 100%;
+}
+.teoria figure img {
+  width: 100%;
+  min-height: auto;
+  transition: all 0.7s;
+  position: relative;
+  z-index: 2;
+}
+#teorias > article:hover .teoria figure img {
+  transform: scale(0.9);
+}
+
+.teoria-contenido {
+  padding: 20px;
+  text-align: center;
+}
+.teoria-titulo {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 0.3em;
+  margin-bottom: 0.6em;
+  color: #333;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  margin-top: -5%;
+}
+#teorias > article:hover .teoria .teoria-titulo {
+  color: #ffffff;
+  background-color: rgb(146, 11, 79);
+  padding: 0.5em 0;
+  margin-top: 0;
+  opacity: 1;
+}
+.teoria-descripcion {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 0.2em;
+  transition: all 0.5s;
+}
+
+#teorias > article > div:nth-of-type(2) {
+  font-size: 1rem;
+  width: 50%;
+  margin: 0 1% 0 3%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+/*--------------Contacto--------------*/
+#contacto {
+  text-align: center;
+}
+#contacto h2 {
+  font-size: 1.9em;
+  text-align: center;
+  color: rgb(146, 11, 79);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 0.2em;
+  padding-left: 0.3em;
+  margin: 1.1em auto 0;
+  width: 90%;
+}
+#contacto p {
+  text-align: center;
+  margin: 1.1em auto 0;
+  width: 90%;
+}
+form {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color:  rgb(146, 11, 79);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:  rgb(146, 11, 79, 0.8);
+}
+
+.fotoMia {
+  width: 250px;
+}
+/*--------------Footer--------------*/
+footer {
+  padding: 1.2em 15%;
+  background: rgb(146, 11, 79) 0%;
+  text-align: center;
+}
+
+/*----------------------------------------*/
+/* Configuración de Media Querie para estilos específicos para celulares (hasta 480px de ancho). */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 1.2em 5%;
+  }
+  header h1 {
+    width: 100%;
+    display: block;
+    margin: 0 auto 1rem;
     text-align: center;
-}
-#teorias > h2{
-    font-size: 1.9em;
-    color:rgb(146, 11, 79);
-    border-bottom: 1px solid rgb(0, 0, 0);
-    padding-bottom: .2em;
-    padding-left: 0.3em;
-    margin-top: 1.1em;
+    background-position: center center;
+  }
+  nav {
+    width: 100%;
+    display: block;
+  }
+  nav ul li {
+    display: block;
+    min-width: 150px;
+    margin: 5px;
+  }
+  #banner {
+    margin: 0;
+    height: 70vh;
+    background: url(../imagenes/logo.png) scroll no-repeat 60% 48%;
+    border-radius: 0 !important;
+  }
+  #banner > h2 {
+    font-size: 2em;
     width: 90%;
-}
-
-#teorias > p{
+  }
+  section {
+    border-radius: 1em !important;
+    margin: 2%;
+    padding: 0.3em 1em;
+  }
+  #episodios > p {
     margin: 1.5rem 1rem 3rem 1rem;
+  }
+  #personajes > h2 {
+    font-size: 1.6em;
+    width: 100%;
+  }
+  #personajes > article {
+    display: block;
+    width: calc(100% - 1%);
+    height: initial;
+    margin: 3% 1%;
+    padding-bottom: 5%;
+  }
+  .personaje {
+    display: block;
+    width: 100%;
+    position: initial;
+    transform: none;
+    border: none;
+  }
+  .personaje:before {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  #personajes > article > div:nth-of-type(2) {
+    width: 100%;
+    position: initial;
+    transform: none;
+    padding: 20px;
+    margin: 0;
+  }
+  #episodios > h2 {
+    font-size: 1.6em;
+    width: 100%;
+  }
+  #episodios > article {
+    display: block;
+    width: calc(100% - 1%);
+    height: initial;
+    margin: 3% 1%;
+    padding-bottom: 5%;
+  }
+  .episodio {
+    display: block;
+    width: 100%;
+    position: initial;
+    transform: none;
+    border: none;
+  }
+  #episodios > article > div:nth-of-type(2) {
+    width: 100%;
+    position: initial;
+    transform: none;
+    padding: 20px;
+    margin: 0;
+  }
+  #teorias > h2 {
+    font-size: 1.6em;
+    width: 100%;
+  }
+  #teorias > article {
+    display: block;
+    width: calc(100% - 1%);
+    height: initial;
+    padding-bottom: 5%;
+  }
+  .teoria {
+    display: block;
+    width: 100%;
+    position: initial;
+    transform: none;
+    border: none;
+  }
+  #teorias > article > div:nth-of-type(2) {
+    width: 100%;
+    position: initial;
+    transform: none;
+    margin: 0;
+    text-align: center;
+  }
+  #contacto form > div {
+    width: 100%;
+    text-align: center;
+  }
 }
+/*----------------------------------------*/
+/* Configuración de Media Querie para estilos específicos para tablets (hasta 768px de ancho).*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    padding: 1.2em 5%;
+  }
+  header h1 {
+    width: 100%;
+    display: block;
+    margin: 0 auto 1rem;
+    text-align: center;
+    background-position: center center;
+  }
+  nav {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  nav ul li {
+    display: block;
+    min-width: 150px;
+    margin: 5px;
+  }
+  #banner {
+    margin: 0;
+    height: 60vh;
+    background: url(../imagenes/logo.png) scroll no-repeat 67% 45%;
+  }
+  #banner > h2 {
+    font-size: 2.2em;
+    width: 95%;
+  }
+  section {
+    border-radius: 1em !important;
+    margin: 2%;
+    padding: 0.3em 1em;
+  }
+  #episodios > p {
+    margin: 1.5rem 1rem 3rem 1rem;
+  }
+  #personajes > h2 {
+    font-size: 1.6em;
+    width: 100%;
+  }
+  #personajes > article {
+    display: block;
+    width: calc(100% - 1%);
+    height: initial;
+    margin: 3% 1%;
+    padding-bottom: 5%;
+  }
+  .personaje {
+    display: block;
+    width: 100%;
+    position: initial;
+    transform: none;
+    border: none;
+  }
+  #personajes > article > div:nth-of-type(2) {
+    width: 100%;
+    position: initial;
+    transform: none;
+    padding: 20px;
+    margin: 0;
+  }
+  #episodios > article {
+    display: block;
+    width: calc(100% - 1%);
+    height: initial;
+    margin: 3% 1%;
+    padding-bottom: 5%;
+  }
+  .episodio {
+    display: block;
+    width: 100%;
+    position: initial;
+    transform: none;
+    border: none;
+  }
+  #episodios > article > div:nth-of-type(2) {
+    width: 100%;
+    position: initial;
+    transform: none;
+    padding: 20px;
+    margin: 0;
+  }
 
-#teorias > article{
+  #teorias > article {
     font-size: 0;
     position: relative;
     height: auto;
@@ -345,457 +705,107 @@ iframe {
     overflow: hidden;
     transition: all 0.3s ease;
     margin: 1%;
-    width: 70%;
+    width: 100%;
     display: inline-block;
     vertical-align: top;
-}
-
-.teoria{
-    font-size: 1rem;
-    width: 45%;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    border-right: 1px dotted rgba(0, 0, 0, 0.3);
-    vertical-align: middle;
-}
-
-.teoria figure{
-    max-width: 100%;
-}
-.teoria figure img{
+  }
+  #teorias > h2 {
+    font-size: 1.6em;
     width: 100%;
-    min-height: auto;
-    transition: all 0.7s;
-    position: relative;
-    z-index: 2;
-}
-#teorias > article:hover .teoria figure img{
-    transform: scale(0.9);
-}
-
-.teoria-contenido {
-    padding: 20px;
-    text-align: center;
-}
-.teoria-titulo {
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-top: 0.3em;
-    margin-bottom: 0.6em;
-    color: #333;
-    transition: all 0.5s;
-    position: relative;
-    z-index: 3;
-    opacity: 0;
-    margin-top: -5%;
-}  
-#teorias > article:hover .teoria .teoria-titulo{
-    color: #ffffff;
-    background-color: rgb(146, 11, 79);
-    padding: 0.5em 0;
-    margin-top: 0;
-    opacity: 1;
-}
-.teoria-descripcion {
-    font-size: 1em;
-    color: #777;
-    margin-bottom: 0.2em;
-    transition: all 0.5s;
-}
-
-#teorias > article > div:nth-of-type(2){
-    font-size: 1rem;
-    width: 50%;
-    margin: 0 1% 0 3%;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-}
-
-/*--------------Contacto--------------*/
-#contacto {
-    text-align: center;
-}
-#contacto h2{
-    font-size: 1.9em;
-    text-align: center;
-    color: rgb(146, 11, 79);
-    border-bottom: 1px solid rgb(0, 0, 0);
-    padding-bottom: .2em;
-    padding-left: 0.3em;
-    margin: 1.1em auto 0;
-    width: 90%;
-}
-#contacto p{
-    text-align: center;
-    margin: 1.1em auto 0;
-    width: 90%;
-}
-form {
-    width: 70%;
-    margin: 0 auto;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
-  fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  label {
+  #teorias > article {
     display: block;
-    margin-bottom: 8px;
-    color: #333;
+    width: calc(100% - 1%);
+    height: initial;
+    padding-bottom: 5%;
   }
-  
-  input {
+  .teoria {
+    display: block;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px
-  }    
-.fotoMia {
-    width: 250px;
-}
-/*--------------Footer--------------*/
-footer{
-    padding: 1.2em 15%;
-    background:rgb(146, 11, 79)0%;
+    position: initial;
+    transform: none;
+    border: none;
+  }
+  #teorias > article > div:nth-of-type(2) {
+    width: 100%;
+    position: initial;
+    transform: none;
+    margin: 0;
     text-align: center;
-}
-
-/*----------------------------------------*/
-/* Configuración de Media Querie para estilos específicos para celulares (hasta 480px de ancho). */
-@media screen and (max-width:480px){
-    header{
-        padding: 1.2em 5%;
-    }
-    header h1{
-        width: 100%;
-        display: block;
-        margin: 0 auto 1rem;
-        text-align: center;
-        background-position: center center;
-    }
-    nav{
-        width: 100%;
-        display: block;
-    }
-    nav ul li{
-        display: block;
-        min-width: 150px;
-        margin: 5px;
-    }
-    #banner{
-        margin: 0;
-        height: 70vh;
-        background: url(../imagenes/logo.png) scroll no-repeat 60% 48%;
-        border-radius: 0 !important;
-    }
-    #banner > h2 {
-        font-size: 2em;
-        width: 90%;
-    }
-    section{
-        border-radius: 1em !important;
-        margin: 2%;
-        padding: .3em 1em;
-    }
-    #episodios > p{
-        margin: 1.5rem 1rem 3rem 1rem;
-    }
-    #personajes > h2 {
-        font-size: 1.6em;
-        width: 100%;
-    }
-    #personajes > article {
-        display: block;
-        width: calc(100% - 1%);
-        height: initial;
-        margin: 3% 1%;
-        padding-bottom: 5%;;
-    }
-    .personaje{
-        display: block;
-        width: 100%;
-        position: initial;
-        transform: none;
-        border: none;
-    }
-    .personaje:before {
-        max-width: 100px;
-        max-height: 100px;
-    }
-    #personajes > article > div:nth-of-type(2) {
-        width: 100%;
-        position: initial;
-        transform: none;
-        padding: 20px;
-        margin: 0;
-    }
-    #episodios > h2 {
-        font-size: 1.6em;
-        width: 100%;
-    }
-    #episodios > article {
-        display: block;
-        width: calc(100% - 1%);
-        height: initial;
-        margin: 3% 1%;
-        padding-bottom: 5%;;
-    }
-    .episodio{
-        display: block;
-        width: 100%;
-        position: initial;
-        transform: none;
-        border: none;
-    }
-    #episodios > article > div:nth-of-type(2) {
-        width: 100%;
-        position: initial;
-        transform: none;
-        padding: 20px;
-        margin: 0;
-    }
-    #teorias > h2 {
-        font-size: 1.6em;
-        width: 100%;
-    }
-    #teorias > article {
-        display: block;
-        width: calc(100% - 1%);
-        height: initial;
-        padding-bottom: 5%;;
-    }
-    .teoria{
-        display: block;
-        width: 100%;
-        position: initial;
-        transform: none;
-        border: none;
-    }
-    #teorias > article > div:nth-of-type(2) {
-        width: 100%;
-        position: initial;
-        transform: none;
-        margin: 0;
-        text-align: center;
-    }
-    #contacto form > div {
-        width: 100%;
-        text-align: center;
-        
-    }  
-}
-
-/*----------------------------------------*/
-/* Configuración de Media Querie para estilos específicos para tablets (hasta 768px de ancho).*/
-@media screen and (min-width:481px) and (max-width:768px){
-    header{
-        padding: 1.2em 5%;
-    }
-    header h1{
-        width: 100%;
-        display: block;
-        margin: 0 auto 1rem;
-        text-align: center;
-        background-position: center center;
-    }
-    nav{
-        width: 100%;
-        text-align: center;
-        display: block;
-    }
-    nav ul li{
-        display: block;
-        min-width: 150px;
-        margin: 5px;
-    }
-    #banner{
-        margin: 0;
-        height: 60vh;
-        background: url(../imagenes/logo.png) scroll no-repeat 67% 45%;
-    }
-    #banner > h2 {
-        font-size: 2.2em;
-        width: 95%;
-    }
-    section{
-        border-radius: 1em !important;
-        margin: 2%;
-        padding: .3em 1em;
-    }
-    #episodios > p{
-        margin: 1.5rem 1rem 3rem 1rem;
-    }
-    #personajes > h2 {
-        font-size: 1.6em;
-        width: 100%;
-    }
-    #personajes > article {
-        display: block;
-        width: calc(100% - 1%);
-        height: initial;
-        margin: 3% 1%;
-        padding-bottom: 5%;;
-    }
-    .personaje{
-        display: block;
-        width: 100%;
-        position: initial;
-        transform: none;
-        border: none;
-    }
-    #personajes > article > div:nth-of-type(2) {
-        width: 100%;
-        position: initial;
-        transform: none;
-        padding: 20px;
-        margin: 0;
-    }
-    #episodios > article {
-        display: block;
-        width: calc(100% - 1%);
-        height: initial;
-        margin: 3% 1%;
-        padding-bottom: 5%;;
-    }
-    .episodio{
-        display: block;
-        width: 100%;
-        position: initial;
-        transform: none;
-        border: none;
-    }
-    #episodios > article > div:nth-of-type(2) {
-        width: 100%;
-        position: initial;
-        transform: none;
-        padding: 20px;
-        margin: 0;
-    }
-
-    #teorias > article{
-        font-size: 0;
-        position: relative;
-        height: auto;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        overflow: hidden;
-        transition: all 0.3s ease;
-        margin: 1%;
-        width: 100%;
-        display: inline-block;
-        vertical-align: top;
-    }
-    #teorias > h2 {
-        font-size: 1.6em;
-        width: 100%;
-    }
-    #teorias > article {
-        display: block;
-        width: calc(100% - 1%);
-        height: initial;
-        padding-bottom: 5%;;
-    }
-    .teoria{
-        display: block;
-        width: 100%;
-        position: initial;
-        transform: none;
-        border: none;
-    }
-    #teorias > article > div:nth-of-type(2) {
-        width: 100%;
-        position: initial;
-        transform: none;
-        margin: 0;
-        text-align: center;
-    }
-    #contacto form > div {
-        width: 100%;
-        text-align: center;
-    }
+  }
+  #contacto form > div {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /*----------------------------------------*/
 /* Configuración de Media Querie para estilos específicos para PCs o Laptops (de 769 en adelante). */
-@media screen and (min-width:769px){
-    header > div{
-        max-width: 1400px;
-        margin: auto;
-    }
-    #banner > h2{
-        max-width: 1200px;
-    }
+@media screen and (min-width: 769px) {
+  header > div {
+    max-width: 1400px;
+    margin: auto;
+  }
+  #banner > h2 {
+    max-width: 1200px;
+  }
 }
 
-@media screen and (min-width:769px) and (max-width: 1399px){
-    nav{
-        width: 100%;
-        display: block;
-    }
-    nav ul li{
-        display: block;
-        min-width: 150px;
-        margin: 5px;
-    }
-    #personajes > article {
-        min-height: 900px;
-    }
-    .personaje{
-        display: block;
-        width: 100%;
-        position: relative;
-        transform: none;
-        border: none;
-    }
+@media screen and (min-width: 769px) and (max-width: 1399px) {
+  nav {
+    width: 100%;
+    display: block;
+  }
+  nav ul li {
+    display: block;
+    min-width: 150px;
+    margin: 5px;
+  }
+  #personajes > article {
+    min-height: 900px;
+  }
+  .personaje {
+    display: block;
+    width: 100%;
+    position: relative;
+    transform: none;
+    border: none;
+  }
 
-    #teorias > article{
-        font-size: 0;
-        position: relative;
-        height: auto;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        overflow: hidden;
-        transition: all 0.3s ease;
-        margin: 1%;
-        width: 90%;
-        display: inline-block;
-        vertical-align: top;
-    }
+  #teorias > article {
+    font-size: 0;
+    position: relative;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin: 1%;
+    width: 90%;
+    display: inline-block;
+    vertical-align: top;
+  }
 
-    #contacto form > div {
-        width: max(80%, 70%);
-        text-align: center;
-    }
+  #contacto form > div {
+    width: max(80%, 70%);
+    text-align: center;
+  }
 }
 
-@media screen and (min-width:1400px){
-    header{
-        padding: 1.2em 15%;
-    }
-    
-    section:not(:first-of-type){
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+@media screen and (min-width: 1400px) {
+  header {
+    padding: 1.2em 15%;
+  }
 
-    #personajes > article {
-        height: 430px;
-        padding-top: 30px;
-    }
+  section:not(:first-of-type) {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #personajes > article {
+    height: 430px;
+    padding-top: 30px;
+  }
 }
-
-
