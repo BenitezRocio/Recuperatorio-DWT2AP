@@ -266,8 +266,8 @@ section:not(#banner){
 }
 .episodio figure img{
     width: 100%;
-    min-height: auto;
-    transition: all 0.7s;
+    height: auto;
+    transition: all 0.5s;
     position: relative;
     z-index: 2;
 }
@@ -313,7 +313,9 @@ section:not(#banner){
     position: relative;
     vertical-align: middle;
 }
-
+iframe {
+    border: 0;
+}
 /*--------------Teorias--------------*/
 
 #teorias {
@@ -430,16 +432,35 @@ section:not(#banner){
     margin: 1.1em auto 0;
     width: 90%;
 }
-#contacto form > div{
-    width: 50%;
-    font-size: 0;
-    text-align: center;
-    margin: 3% auto;
-}
-
-#contacto input{
-    border-radius: 10px;
-}
+form {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px
+  }    
 .fotoMia {
     width: 250px;
 }
@@ -572,7 +593,7 @@ footer{
         width: 100%;
         text-align: center;
         
-    }
+    }  
 }
 
 /*----------------------------------------*/
